@@ -1,0 +1,8 @@
+flask
+flask-restful
+werkzeug
+pandas
+requests
+fastai
+numpy
+pathlib
