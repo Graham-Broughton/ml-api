@@ -1,0 +1,3 @@
+WANDB_API_KEY="xxx"
+RESOLUTION="224"  # or 384
+MODEL="convnext-xlarge-21k"  # choose from ["convnext-large-21k", "convnext-xlarge-21k", "swin-large"]
