@@ -31,5 +31,6 @@ local_deploy: get_deploy_model
 $(MODEL_MARKER):
 	@echo "Downloading model..."
 	@mkdir -p $(MODEL_DIR)
-	@pipenv run wandb artifact get model-registry/$(WANDB_REGISTERED_MODEL):latest --root $(MODEL_DIR)
-	@touch $(MODEL_MARKER)
+	# @pipenv run wandb artifact get model-registry/$(WANDB_REGISTERED_MODEL):latest --root $(MODEL_DIR)
+	@bash -c "wandb artifact get model-registry/$(WANDB_REGISTERED_MODEL):latest --root $(MODEL_DIR)"
+	# @touch $(MODEL_MARKER)
